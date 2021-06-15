@@ -1,3 +1,5 @@
+![alt text](modal.png)
+
 
 WELCOME
 ABOUT US
@@ -115,3 +117,5 @@ info@grandaverestaurant.com
 grandaverestaurant.com
 
 © Copyright Grand Avenue
+
+![alt text](screencapture.png)
