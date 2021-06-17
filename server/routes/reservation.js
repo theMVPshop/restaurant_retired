@@ -17,8 +17,22 @@ router.post('/add', (req, res) => {
 })
 router.get('/', (req, res)=> res.send('welcome'))
 
-router.get('/all', (req, res)=> {
-  res.send()
+router.get('/all', async (req, res)=> {
+  try{const allRes = await Reservation.find();
+  res.status(200).json(allRes)}
+  catch(error){
+    res.status(404).json({message: error.message})
+  }
+})
+router.get('/user/:email', async (req, res)=>{
+  const { email } = req.params;
+
+  try {
+    const resy = await Reservation.find({email: email});
+    res.status(200).json(resy);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+}
 })
 
 module.exports = router;
