@@ -4,9 +4,10 @@ const router = express.Router();
 const Reservation = require('../models/reservation');
 
 router.post('/add', (req, res) => {
-  const { email, date, table, diners } = req.body;
+  console.log(req.body)
+  const { email, date, table, diners, notes } = req.body;
   const newRes = new Reservation({
-    email, date, table, diners
+    email, date, table, diners, notes
   });
   newRes.save()
   .then(resy => {

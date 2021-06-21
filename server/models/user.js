@@ -16,9 +16,13 @@ const UserSchema = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now
+  },
+  role: {
+    type: String,
+    required: true
   }
 
 });
 
-const User = mongoose.model('User', UserSchema);
+const User = mongoose.models.User || mongoose.model('User', UserSchema)
 module.exports = User;

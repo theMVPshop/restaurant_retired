@@ -17,6 +17,10 @@ const ReservationSchema = new mongoose.Schema({
   diners: {
     type: Number,
     required: true
+  }, 
+  notes: {
+    type: String,
+    required: false
   }
 
 });
