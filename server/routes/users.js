@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
-
+const { ensureAuthenticated } = require('../config/auth')
 const User = require('../models/user');
 
-router.get('/all', async (req, res)=> {
+router.get('/all', ensureAuthenticated, async (req, res)=> {
   try{const allUsers = await User.find();
     res.status(200).json(allUsers)}
     catch(error){
@@ -58,5 +58,27 @@ router.post('/register', async (req, res) =>{
   })
   }}
 );
+router.post('/login', (req, res, next) => {
+  passport.authenticate('local', (err, user, info) => {
+    if(err) throw err;
+    if(!user) res.status(404).send("No user exists")
+    else {
+      req.logIn(user, (err) => {
+        if (err) throw err;
+        res.status(200).send("Successfully Authenticated");
+        console.log(req.user);
+      });
+    }
+  }) (req, res, next);
+})
+router.get("/user", (req, res) => {
+  res.send(req.user); // The req.user stores the entire user that has been authenticated inside of it.
+});
+
+//Logout Handle
+router.get('/logout', (req, res) => {
+  req.logout();
+  req.send("You are logged out");
+})
 
 module.exports = router;

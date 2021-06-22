@@ -1,7 +1,7 @@
 const express = require('express');
-// const expressLayouts = require('express-ejs-layouts');
+const cookieParser = require("cookie-parser");
 const mongoose = require('mongoose');
-// const flash = require('connect-flash');
+const cors = require("cors");
 const session = require('express-session');
 const passport = require('passport');
 const dotenv =  require('dotenv');
@@ -26,6 +26,12 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true } )
 // Bodyparser
 app.use(express.urlencoded({extended: false}));
 
+app.use(
+  cors({
+    origin: "http://localhost:3000", // <-- location of the react app were connecting to
+    credentials: true,
+  })
+);
 //Express Session
 app.use(
   session({
@@ -35,18 +41,13 @@ app.use(
   })
 );
 //Passport middleware
+app.use(cookieParser("secretcode"));
 app.use(passport.initialize());
 app.use(passport.session());
 
 //Connect flash
 // app.use(flash());
 
-//Global Vars
-// app.use((req, res, next) => {
-//   res.locals.success_msg = req.flash("success_msg");
-//   res.locals.error_msg = req.flash("error_msg");
-//   res.locals.error = req.flash("error");
-//   next()
 // })
 //Routes
 app.use('/users', require('./routes/users'))
