@@ -5,6 +5,7 @@ const cors = require("cors");
 const session = require('express-session');
 const passport = require('passport');
 const dotenv =  require('dotenv');
+const bodyParser = require("body-parser");
 const app = express();
 
 // Passport Config
@@ -24,8 +25,9 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true } )
 // app.set('view engine', 'ejs');
 
 // Bodyparser
-app.use(express.urlencoded({extended: false}));
-
+app.use(express.urlencoded({extended: true}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
     origin: "http://localhost:3000", // <-- location of the react app were connecting to

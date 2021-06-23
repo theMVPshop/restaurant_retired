@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
-const { ensureAuthenticated } = require('../config/auth')
+const { ensureAuthenticated } = require('../config/auth');
 const User = require('../models/user');
 
 router.get('/all', ensureAuthenticated, async (req, res)=> {
@@ -13,8 +13,8 @@ router.get('/all', ensureAuthenticated, async (req, res)=> {
     }
 })
 
-router.post('/register', async (req, res) =>{
-  const {name, email, password, password2, role} = req.body
+router.post('/register', (req, res) =>{
+  const { name, email, password, password2, role} = req.body
   console.log(req.body)
   let errors = [];
   // Check Required Fields
@@ -31,7 +31,7 @@ router.post('/register', async (req, res) =>{
     res.status(404).json({errors, name, email, password, password2});
   } else{
   
-     await User.findOne({email:email})
+     User.findOne({email:email})
     .then(user => {
       if(user){
         //User Exists
@@ -60,7 +60,7 @@ router.post('/register', async (req, res) =>{
 );
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', (err, user, info) => {
-    
+    console.log(req.user)
     if(err) throw err;
     if(!user) res.status(404).send("No user exists")
     else {
@@ -79,7 +79,7 @@ router.get("/user", (req, res) => {
 //Logout Handle
 router.get('/logout', (req, res) => {
   req.logout();
-  req.send("You are logged out");
+  res.send(req.user);
 })
 
 module.exports = router;
