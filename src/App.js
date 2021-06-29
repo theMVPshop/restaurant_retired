@@ -20,9 +20,7 @@ function App() {
     <div className="App">
     {ReservationIsShown && <ReservationModal onClose={hideReservationHandler} />}
      <Navbar onShowReservation={showReservationHandler}/>
-     <main>
-      <Main />
-     </main>
+     <Main />
     </div>
   );
 }
