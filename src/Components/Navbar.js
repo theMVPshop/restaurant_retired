@@ -2,7 +2,7 @@ import classes from "./Navbar.module.css";
 
 const Navbar = (props) => {
   return (
-    <div className={classes['dumpling-image']}>
+    <div>
       <ul className={classes.nav}>
       <li className={classes['nav-item']}>
         <a className={classes['nav-link']} href="#Welcome">Welcome</a>

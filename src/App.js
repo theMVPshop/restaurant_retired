@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import ReservationModal from './Components/ReservationModal';
 import Navbar from './Components/Navbar';
+import Main from './Components/Main';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     {ReservationIsShown && <ReservationModal onClose={hideReservationHandler} />}
      <Navbar onShowReservation={showReservationHandler}/>
      <main>
-
+      <Main />
      </main>
     </div>
   );
