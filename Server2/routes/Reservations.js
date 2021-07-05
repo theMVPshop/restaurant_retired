@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Reservation = require('../models/Reservations')
+// postRes = require('../controllers/PostRes.js')
 
 //GET ALL RESERVATIONS
 router.get('/', async (req,res)=>{
