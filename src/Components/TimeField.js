@@ -8,6 +8,8 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       color: 'white',
       padding: '5px',
+      fontSize: '13px',
+      width: '185px',
      
       '&.MuiInput-underline:after': {
         borderBottomColor: 'white',
@@ -18,16 +20,10 @@ const useStyles = makeStyles((theme) => ({
       "&.MuiInput-underline:hover:before": {
         borderBottom: '1px solid white'
       },
+      '&.MuiFormLabel-root.Mui-focused': {
+        color: 'white'
+      },
     },
-  },
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
-  textField: {
-    marginLeft: theme.spacing(1),
-    marginRight: theme.spacing(1),
-    width: 200,
   },
 }));
 
@@ -35,21 +31,21 @@ const TimeField = () => {
   const classes = useStyles();
 
   return (
-    <form className={classes.container} noValidate>
+    // <form className={classes.container} noValidate>
       <TextField
         id="time"
-        label="Alarm clock"
+        label="TIME*"
         type="time"
-        defaultValue="07:30"
+        defaultValue="19:00"
         className={`${classes.textField} ${classes.root}`}
-        InputLabelProps={{
-          shrink: true,
-        }}
-        inputProps={{
-          step: 300, // 5 min
-        }}
+        // InputLabelProps={{
+        //   shrink: true,
+        // }}
+        // inputProps={{
+        //   step: 300, // 5 min
+        // }}
       />
-    </form>
+    // </form>
   );
 }
 

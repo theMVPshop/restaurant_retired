@@ -7,6 +7,8 @@ import Beef from '../resources/css/img/images/Shakshouka-Tanya-Zouev-400x400.jpg
 import Egg from '../resources/css/img/images/vickerys-bar-atlanta-400x400.jpg';
 import Burger from '../resources/css/img/images/untitled-8538-400x400.jpg';
 import Dumpling from '../resources/css/img/images/dumpling_new-1024x764-400x400.jpg';
+import OurStory from '../resources/css/img/images/OurStory.png';
+import Steak from '../resources/css/img/images/steak.jpeg';
 
 
 
@@ -16,32 +18,26 @@ const Main = () => {
     <div>
     <header>
       <div className={classes['hero-text-box']}>
-        <h1>Welcome to Grand Avenue</h1>
-        <h3>Making Delicious food since 1990</h3>
+        <h1 className={classes.welcome}>Welcome to</h1>
+        <h2 className={classes.grand}>GRAND</h2>
+        <h2 className={classes.restaurant}>RESTAURANT</h2>
+        <p>Making Delicious food since 1990</p>
       </div>
     </header>
     <section className="section-features js--section-features" id="features">
-      <div className={classes.row}>
-        <h2>Until I discovered cooking I was never really interesting in anything.</h2>
-        <p className={classes['long-copy']}>
+      <div className={classes['intro-section']}>
+        <h2 class={classes.intro}>Until I discovered cooking I was never really interesting in anything.</h2>
+        <p className={classes.founder}>
           Our founder John Phillipe
         </p>
+        <p className={classes.john}>John Phillipe</p>
       </div>
       <div className={classes['section-steps']}>
-        <h2>Discover Our Story</h2>
-        <h3>Ultimate Dining Experience like no other</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Nulla aliquam lacinia eros, sit amet blandit ligula dictum sed. 
-          Phasellus blandit tortor vitae diam sollicitudin aliquam. Nullam non 
-          tortor volutpat, malesuada leo eu, tincidunt tellus. Maecenas luctus purus enim, 
-          nec semper eros porta non. Sed semper tincidunt lectus vitae blandit. Quisque et 
-          venenatis magna. Sed nec erat tortor. In interdum nisi massa, non sagittis lectus 
-          lacinia eget. Vestibulum mollis ipsum luctus dui convallis egestas. Aenean est est, 
-          porttitor a tincidunt feugiat, interdum sit amet odio. In convallis felis sit amet 
-          porta dapibus. Mauris at lectus urna. Etiam id lacus at ipsum placerat rhoncus. 
-          Sed in tempor dolor. Phasellus pretium eleifend diam, quis maximus dolor sodales et. 
-          Pellentesque auctor id risus vitae malesuada.</p>
-      </div>   
+        <div><img src={OurStory} alt="our story background"/></div>
+      </div>
+      <div className={classes.steak}>
+        <img src={Steak} alt="steak sizzling on the grill"/>
+      </div>     
     </section>
     <section className={classes['section-meals']}>
       <h2>Gallery</h2>

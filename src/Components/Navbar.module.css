@@ -1,22 +1,33 @@
-.dumpling-image {
-  /* The image used */
-  
-  min-height: 500px;
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.navbody {
+  height: 0px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: bold;
 }
+
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   list-style: none;
+  align-items: center;
 }
 
 .nav-item {
-  padding: 5px;
   margin: 2%;
+  
+  
+}
+
+.nav-item1 {
+  padding: 10px;
+  margin: 2%;
+  background: transparent !important;
+  border: 2px solid #fff;
+  color: #fff;
+  
 }
 
 .nav-link {
@@ -26,9 +37,18 @@
   padding: 5px;
 }
 
+.nav-link1 {
+  text-decoration: none;
+  color: white;
+}
+
 .nav-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link1:hover {
   transition-delay: border-color 1s ease-in-out;
-  border: 1px solid white;
   text-decoration: none;
   color: white;
 }

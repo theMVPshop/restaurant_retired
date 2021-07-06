@@ -2,7 +2,7 @@ import classes from "./Navbar.module.css";
 
 const Navbar = (props) => {
   return (
-    <div>
+    <div className={classes.navbody}>
       <ul className={classes.nav}>
       <li className={classes['nav-item']}>
         <a className={classes['nav-link']} href="#Welcome">Welcome</a>
@@ -19,8 +19,8 @@ const Navbar = (props) => {
       <li className={classes['nav-item']}>
         <a className={classes['nav-link']} href="#News">News</a>
       </li>
-      <li className={classes['nav-item']}>
-        <a className={classes['nav-link']} href="#Reservations" onClick={props.onShowReservation}>Reservations</a>
+      <li className={classes['nav-item1']}>
+        <a className={classes['nav-link1']} href="#Reservations" onClick={props.onShowReservation}>Reservations</a>
       </li>
     </ul>
   </div>

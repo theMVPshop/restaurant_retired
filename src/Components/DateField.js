@@ -9,46 +9,42 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       color: 'white',
       padding: '5px',
+      fontSize: '13px',
+      width: '185px',
      
       '&.MuiInput-underline:after': {
-        borderBottomColor: 'white',
+        borderBottomColor: 'white'
       },
       '&.MuiInput-underline:before': {
-        borderBottomColor: 'white',
+        borderBottomColor: 'white'
       },
-      "&.MuiInput-underline:hover:before": {
+      '&.MuiInput-underline:hover:before': {
         borderBottom: '1px solid white'
+      },
+      '&.MuiFormLabel-root.Mui-focused': {
+        color: 'white'
       },
     },
   },
   
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
-  textField: {
-    marginLeft: theme.spacing(1),
-    marginRight: theme.spacing(1),
-    width: 200,
-  },
 }));
 
 const DateField = () => {
   const classes = useStyles();
 
   return (
-    <form className={classes.container}>
+    // <form className={classes.container}>
       <TextField
         id="date"
         label="Date"
         type="date"
-        defaultValue="2017-05-24"
+        defaultValue="2021-07-01"
         className={`${classes.textField} ${classes.root}`}
         InputLabelProps={{
           shrink: true,
         }}
       />
-    </form>
+    // </form>
   );
 }
 

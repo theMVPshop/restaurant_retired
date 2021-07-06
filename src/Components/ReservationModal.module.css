@@ -10,17 +10,24 @@
 
 .modal {
   position: fixed;
-  top: 20vh;
+  margin: auto;
+  top: 20px;
   left: 5%;
   width: 90%;
   opacity: '.5';
-  border: 2px solid white;
-  height: 500px;
+  border: 1px solid #fff;
+  height: 92%;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
 }
+
+/* .reservation_form_wrapper {
+  width: 700px;
+  margin: auto;
+  z-index: 999;
+} */
 
 @media (min-width: 768px) {
   .modal {

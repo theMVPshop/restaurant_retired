@@ -1,7 +1,4 @@
-/*
-Orange color: #e67e22
 
-*/
 
 
 /* ----------------------------------------------- */
@@ -44,6 +41,14 @@ body {
     margin: 0 auto;
 }
 
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 section {
     padding: 80px 0;
 }
@@ -56,8 +61,9 @@ section {
 h1,
 h2,
 h3 {
-    font-weight: 300;
+    
     text-transform: uppercase;
+    color: black;
 }
 
 h1 {
@@ -69,21 +75,12 @@ h1 {
     letter-spacing: 1px;
 }
 
-h2 {
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+p {
+    color: white;
 }
 
-h3 {
-    font-size: 110%;
-    margin-bottom: 15px;
-    color: #fff;
-}
 
-h2:after {
+/* h2:after {
     display: block;
     height: 2px;
     background-color: #e67e22;
@@ -91,38 +88,59 @@ h2:after {
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
+} */
+
+.intro {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    color: #333333;
+    width: 50%;
+    line-height: 1.8;
+}
+
+.founder {
+    color: #333333;
+}
+
+.john {
+    color: #333333;
+    font-family: Kristi;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.welcome {
+    font-family: Kristi;
+    color: rgb(207, 166, 112);
+    font-weight: 400;
+}
+
+.grand {
+    color: white;
+    display: inline-block;
+    font-size: 48px;
+}
+
+.restaurant {
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    font-size: 48px;
+}
+
+.steak {
+    
 }
 
 /* ----- PARAGRAPHS ----- */
-.long-copy {
-    line-height: 145%;
-    width: 20%;
-    margin-left: 40%;
-}
 
 .box p {
     font-size: 90%;
     line-height: 145%;
 }
 
-
-/* ----- LINKS ----- */
-
-a:link,
-a:visited {
-    color: #e67e22;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s;
-}
-
-a:hover,
-a:active {
-    color: #555;
-    border-bottom: 1px solid transparent;
-}
 
 /* ----- BUTTONS ----- */
 .btn:link,
@@ -137,64 +155,26 @@ input[type=submit] {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-full:link,
-.btn-full:visited,
-input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
-    color: #fff;
-    margin-right: 15px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
-}
-
-.btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    background-color: #cf6d17;
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid #cf6d17;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color: #fff;
-}
-
 
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/images/dumpling_new-1024x764-400x400.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/images/dumpling_new-1024x764-400x400.jpg);
+    background-image: url(img/images/dumpling_new-1024x764-400x400.jpg);
     background-size: cover;
-    background-position: center;
     height: 100vh;
-    background-attachment: fixed;
 }
 
 .hero-text-box {
     position: absolute;
-    width: 1140px;
     top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin: 2%;
 }
 
-/* Main navi */
+
+
+/* Main navi
 .main-nav {
     float: right;
     list-style: none;
@@ -221,25 +201,25 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
-}
+} */
 
 
 /* ----------------------------------------------- */
 /* FEATURES */
 /* ----------------------------------------------- */
 
-.section-features .long-copy {
+/* .section-features .long-copy {
     margin-bottom: 30px;
-}
+} */
 
-.section-meals {
+/* .section-meals {
     padding: 0;
-}
+} */
 
-.meals-showcase {
+/* .meals-showcase {
     list-style: none;
     width: 100%;
-}
+} */
 
 .meals-showcase li {
     display: block;
@@ -311,7 +291,7 @@ header {
     margin-bottom: 80px;
 }
 
-.works-step div {
+/* .works-step div {
     color: #e67e22;
     font-size: 150%;
     height: 54px;
@@ -323,7 +303,7 @@ header {
     margin-right: 25px;
     float: left;
     padding: 5px;
-}
+} */
 
 .btn-app:link,
 .btn-app:visited {
@@ -362,7 +342,6 @@ textarea {
     width: 100%;
     padding: 7px;
     border-radius: 3px;
-    border: 1px solid #ccc;
 }
 
 textarea {
