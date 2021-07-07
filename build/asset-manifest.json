@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b81219a6.chunk.css",
+    "main.js": "/static/js/main.38c53f9c.chunk.js",
+    "main.js.map": "/static/js/main.38c53f9c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.79f3c78d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.79f3c78d.js.map",
+    "static/js/2.100da0f2.chunk.js": "/static/js/2.100da0f2.chunk.js",
+    "static/js/2.100da0f2.chunk.js.map": "/static/js/2.100da0f2.chunk.js.map",
+    "static/js/3.338c3156.chunk.js": "/static/js/3.338c3156.chunk.js",
+    "static/js/3.338c3156.chunk.js.map": "/static/js/3.338c3156.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b81219a6.chunk.css.map": "/static/css/main.b81219a6.chunk.css.map",
+    "static/js/2.100da0f2.chunk.js.LICENSE.txt": "/static/js/2.100da0f2.chunk.js.LICENSE.txt",
+    "static/media/100_1040312_mercer_knives_0391_fweb-400x400.06c544e8.jpg": "/static/media/100_1040312_mercer_knives_0391_fweb-400x400.06c544e8.jpg",
+    "static/media/223_1r140806_eat_spots_sobanndls-400x400.d973e3de.jpg": "/static/media/223_1r140806_eat_spots_sobanndls-400x400.d973e3de.jpg",
+    "static/media/238E6F3800000578-2851992-image-3_1417106023786-400x400.f770c71b.jpg": "/static/media/238E6F3800000578-2851992-image-3_1417106023786-400x400.f770c71b.jpg",
+    "static/media/Orleans-Somerville-2-400x400.a7445324.jpeg": "/static/media/Orleans-Somerville-2-400x400.a7445324.jpeg",
+    "static/media/OurStory.23d24401.png": "/static/media/OurStory.23d24401.png",
+    "static/media/Shakshouka-Tanya-Zouev-400x400.6d6a9f94.jpg": "/static/media/Shakshouka-Tanya-Zouev-400x400.6d6a9f94.jpg",
+    "static/media/Main.module.css": "/static/media/dumpling_new-1024x764-400x400.a8d4b17a.jpg",
+    "static/media/steak.4ed7a213.jpeg": "/static/media/steak.4ed7a213.jpeg",
+    "static/media/untitled-8538-400x400.01950c05.jpg": "/static/media/untitled-8538-400x400.01950c05.jpg",
+    "static/media/vickerys-bar-atlanta-400x400.6cd5f599.jpg": "/static/media/vickerys-bar-atlanta-400x400.6cd5f599.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.79f3c78d.js",
+    "static/js/2.100da0f2.chunk.js",
+    "static/css/main.b81219a6.chunk.css",
+    "static/js/main.38c53f9c.chunk.js"
+  ]
+}
