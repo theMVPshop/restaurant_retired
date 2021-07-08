@@ -9,6 +9,9 @@ import Burger from '../resources/css/img/images/untitled-8538-400x400.jpg';
 import Dumpling from '../resources/css/img/images/dumpling_new-1024x764-400x400.jpg';
 import OurStory from '../resources/css/img/images/OurStory.png';
 import Steak from '../resources/css/img/images/steak.jpeg';
+import chickensmall from '../resources/css/img/images/chickensmall.jpeg';
+import crab from '../resources/css/img/images/crab.jpeg';
+import salmon from '../resources/css/img/images/salmon.jpeg';
 
 
 
@@ -35,8 +38,145 @@ const Main = () => {
       <div className={classes['section-steps']}>
         <div><img src={OurStory} alt="our story background"/></div>
       </div>
+
+
+      <div className={classes['menu-signature']}>
+        <h2 className={classes['menu-title']}>Signature</h2>
+        
+        <div className={classes['signature-items']}>
+
+          <div className={classes['menu-content']}>
+              <img className={classes['menu-image']} src={chickensmall} alt="chicken menu"></img>
+            <h5 className={classes['menu-post']}>
+              <span className={classes['menu-title-sig']}>Salted Fried Chicken</span>
+              <span className={classes['menu-price']}>$20</span>
+            </h5>
+            <div className={classes['menu-excerpt']}>Chicken / Olve Oil / Salt</div>
+          </div>
+
+          <div className={classes['menu-content']}>
+              <img className={classes['menu-image']} src={crab} alt="crab menu"></img>
+            <h5 className={classes['menu-post']}>
+              <span className={classes['menu-title-sig']}>Crab with Curry Sources</span>
+              <span className={classes['menu-price']}>$25</span>
+            </h5>
+            <div className={classes['menu-excerpt']}>Crab / Potato / Rice</div>
+          </div>
+
+          <div className={classes['menu-content']}>
+            
+              <img className={classes['menu-image']}src={salmon} alt="salmon menu"></img>
+            <h5 className={classes['menu-post']}>
+              <span className={classes['menu-title-sig']}>Imported Salmon Steak</span>
+              <span className={classes['menu-price']}>$19</span>
+            </h5>
+            <div className={classes['menu-excerpt']}>Salmon / Veggies / Oil</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className={classes['menu-lunch']}>
+        <h2 className={classes['menu-title']}>Lunch</h2>
+
+        <div className={classes['lunch-items-wrapper']}>
+
+          <div className={classes['lunch-menu-left']}>
+            <div className={classes['menu-content']}>
+              <h5 className={classes['menu-post']}>
+                <span className={classes['menu-title-sig']}>BAKED POTATO PIZZA</span>
+                <span className={classes['menu-price']}>$12</span>
+              </h5>
+              <div className={classes['menu-excerpt']}>Potato / Bread/ Cheese</div>
+            </div>
+          </div>
+
+          <div className={classes['lunch-menu-right']}>
+            <div className={classes['menu-content']}>
+              <h5 className={classes['menu-post']}>
+                <span className={classes['menu-title-sig']}>PORK TENDERLOIN MARINATED IN YOGURT</span>
+                <span className={classes['menu-price']}>$20</span>
+              </h5>
+              <div className={classes['menu-excerpt']}>Pork / Tenderloin / Yogurt</div>
+            </div>
+          </div>
+
+          <div className={classes['lunch-menu-left']}>
+            <div className={classes['menu-content']}>
+              <h5 className={classes['menu-post']}>
+                <span className={classes['menu-title-sig']}>GRILLED PORK WITH PRESERVED LEMONS</span>
+                <span className={classes['menu-price']}>$22</span>
+              </h5>
+              <div className={classes['menu-excerpt']}>Pork / Lemons / Onions</div>
+            </div>
+          </div>
+
+          <div className={classes['lunch-menu-right']}>
+            <div className={classes['menu-content']}>
+              <h5 className={classes['menu-post']}>
+                <span className={classes['menu-title-sig']}>LEMON ROSEMARY CHICKEN</span>
+                <span className={classes['menu-price']}>$20</span>
+              </h5>
+              <div className={classes['menu-excerpt']}>Lemon / Rosemary / Chicken</div>
+            </div>
+          </div>
+
+          <div className={classes['lunch-menu-left']}>
+            <div className={classes['menu-content']}>
+              <h5 className={classes['menu-post']}>
+                <span className={classes['menu-title-sig']}>APPLE SMOKED CHICKEN WITH WHITE SAUCE</span>
+                <span className={classes['menu-price']}>$20</span>
+              </h5>
+              <div className={classes['menu-excerpt']}>Chicken / Apple / Tomatos</div>
+            </div>
+          </div>
+
+          <div className={classes['lunch-menu-right']}>
+            <div className={classes['menu-content']}>
+              <h5 className={classes['menu-post']}>
+                <span className={classes['menu-title-sig']}>MEATLOAF WITH GRILLED HONEY BBQ</span>
+                <span className={classes['menu-price']}>$20</span>
+              </h5>
+              <div className={classes['menu-excerpt']}>Meatloaf / Honey / BBQ</div>
+            </div>
+          </div>
+
+          <div className={classes['lunch-menu-left']}>
+            <div className={classes['menu-content']}>
+              <h5 className={classes['menu-post']}>
+                <span className={classes['menu-title-sig']}>BRAISED CHICKEN BREAST WITH WHITE WINE AND SHALLOTS</span>
+                <span className={classes['menu-price']}>$25</span>
+              </h5>
+              <div className={classes['menu-excerpt']}>Chicken Breast / Wine</div>
+            </div>
+          </div>
+
+          <div className={classes['lunch-menu-right']}>
+            <div className={classes['menu-content']}>
+              <h5 className={classes['menu-post']}>
+                <span className={classes['menu-title-sig']}>GRILLED HANGER STEAK WITH HARISSA AND PICKLED RED ONIONS</span>
+                <span className={classes['menu-price']}>$20</span>
+              </h5>
+              <div className={classes['menu-excerpt']}>Beef / Onions / Tomatos</div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
       <div className={classes.steak}>
-        <img src={Steak} alt="steak sizzling on the grill"/>
+        <img className={classes.steakimg} src={Steak} alt="steak sizzling on the grill"/>
       </div>     
     </section>
     <section className={classes['section-meals']}>
