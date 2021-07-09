@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
       color: 'white',
       padding: '5px',
       float: 'left',
-      width: '668px',
+      width: '185px',
       "&.Mui-focused": {
         color: 'white',
       },
